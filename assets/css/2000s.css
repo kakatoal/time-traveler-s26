@@ -10,3 +10,40 @@ body {
 	font-family: monospace;
 	background-color: rgb(147, 246, 140);
 }
+p {
+	padding: 20px;
+	border-top: 5px solid black;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.intro {
+	font-size: 24px;
+	background-color: white;
+	transition: background-color 0.5s ease;
+}
+.intro:hover {
+	background-color: rgb(255, 255, 255);
+	border_style: solid;
+}
+.intro:active {
+	font-size: italic;
+	}
+
+	.hippo {
+		background-color: cyan;
+		animation-name: rhino;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function: ease-in-out;
+
+	}
+	@keyframes rhino {
+		0% {font-size: 16px;}
+		50% {font-size: 30px;}
+		100% {font-size: 6px;}
+
+	
+	}
