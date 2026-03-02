@@ -7,43 +7,292 @@
 
 /* Write your CSS below (feel free to change the styles already here) */
 body {
-	font-family: monospace;
-	background-color: rgb(147, 246, 140);
+	font-family: 'Courier New', Courier, monospace;
+	background-color: rgb(243, 241, 235);
 }
 p {
 	padding: 20px;
-	border-top: 5px solid black;
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-
 }
+.title {
+	font-family:fantasy;
+	font-size: 60px;
+	font-weight: bold;
+	padding: 10px 100px;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	color: white;
+	background-color: black;
+}
+
 .intro {
-	font-size: 24px;
-	background-color: white;
-	transition: background-color 0.5s ease;
+	font-size: 15px;
+	padding: 10px 100px;
+	text-align: left;
+	padding-left: 1%;
+	font-weight: bold;
+	position: absolute;
+	top: 150px;
+	left: 0px;
+	color: white;
+	background-color: black;
 }
-.intro:hover {
-	background-color: rgb(255, 255, 255);
-	border_style: solid;
-}
-.intro:active {
-	font-size: italic;
-	}
 
-	.hippo {
-		background-color: cyan;
-		animation-name: rhino;
-		animation-duration: 2s;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
-		animation-timing-function: ease-in-out;
-
-	}
-	@keyframes rhino {
-		0% {font-size: 16px;}
-		50% {font-size: 30px;}
-		100% {font-size: 6px;}
-
+.mainone {
+	position: absolute;
+	font-size: 31px;
+	left:50%;
+	top: 10px;
+	width: 600px;
+	height: 500px;
+	overflow: hidden;
+	color: white;
+	background-color: black;
 	
-	}
+	transform: scale(0.6);
+	transform-origin:bottom;
+
+	animation: smaller 1s forwards;
+
+}
+
+.mainone:hover {
+	animation: bigger 1s forwards;
+}
+
+@keyframes bigger {
+	0% {transform: scale(0.6); font-size: 31px;}
+	100% {transform: scale(1); font-size: 12px;}
+
+}
+@keyframes smaller {
+	0% {transform: scale(1); font-size: 12px;}
+	100% {transform: scale(0.6); font-size: 31px;}
+
+}
+
+.maintwo {
+	position: absolute;
+	font-size: 30px;
+	left:50%;
+	top: 520px;
+	width: 300px;
+	height: 500px;
+	overflow: hidden;
+	color: white;
+	background-color: black;
+	
+	transform: scale(0.6);
+	transform-origin: top right;	
+	
+
+	animation: smaller2 1s forwards;
+}
+
+.maintwo:hover {
+	animation: bigger2 1s forwards;
+}
+
+@keyframes bigger2 {
+	0% {transform: scale(0.6); font-size: 30Spx;}
+	100% {transform: scale(1); font-size: 12px;}
+
+}
+@keyframes smaller2 {
+	0% {transform: scale(1); font-size: 12px;}
+	100% {transform: scale(0.6); font-size: 30px;}
+
+}
+
+.mainthree {
+	position: absolute;
+	font-size: 40px;
+	left:68%;
+	top: 520px;
+	width: 340px;
+	height: 650px;
+	overflow: hidden;
+	color: white;
+	background-color: black;
+	
+	transform: scale(0.6);
+	transform-origin: top left;	
+	
+
+	animation: smaller3 1s forwards;
+}
+
+.mainthree:hover {
+	animation: bigger3 1s forwards;
+}
+
+@keyframes bigger3 {
+	0% {transform: scale(0.6); font-size: 40Spx;}
+	100% {transform: scale(1); font-size: 10px;}
+
+}
+@keyframes smaller3 {
+	0% {transform: scale(1); font-size: 10px;}
+	100% {transform: scale(0.6); font-size: 40px;}
+
+}
+
+.mainfour {
+	position: absolute;
+	font-size: 26px;
+	left:53%;
+	top: 1000px;
+	width: 249px;
+	height: 750px;
+	overflow: hidden;
+	color: white;
+	background-color: black;
+	
+	transform: scale(0.6);
+	transform-origin: top right;	
+	
+
+	animation: smaller4 1s forwards;
+}
+
+.mainfour:hover {
+	animation: bigger4 1s forwards;
+}
+
+@keyframes bigger4 {
+	0% {transform: scale(0.6); font-size: 26px;}
+	100% {transform: scale(1); font-size: 11px;}
+
+}
+
+@keyframes smaller4 {
+	0% {transform: scale(1); font-size: 11px;}
+	100% {transform: scale(0.6); font-size: 26px;}
+
+}
+
+.mainfive {
+	position: absolute;
+	font-size: 55px;
+	left:68%;
+	top: 1000px;
+	width: 290px;
+	height: 780px;
+	overflow: hidden;
+	color: white;
+	background-color: black;
+	
+	transform: scale(0.6);
+	transform-origin: top left;	
+	
+
+	animation: smaller5 1s forwards;
+}
+
+.mainfive:hover {
+	animation: bigger5 1s forwards;
+}
+
+@keyframes bigger5 {
+	0% {transform: scale(0.6); font-size: 55px;}
+	100% {transform: scale(1); font-size: 12px;}
+
+}
+
+@keyframes smaller5 {
+	0% {transform: scale(1); font-size: 12px;}
+	100% {transform: scale(0.6); font-size: 55px;}
+
+}
+
+.author {
+	position: absolute;
+	font-size: 17px;
+	left: 60%;
+	top: 1480px;
+	width: 340px;
+	height: 6px;
+	color: white;
+	background-color: black;
+}
+
+
+.block {
+	position: absolute;
+	left: 59%;
+	top: 1530px;
+	width: 300px;
+	height: 400px;
+	color: white;
+	background-color: black;
+}
+
+.block2 {
+	position: absolute;
+	left: 75%;
+	top: 1480px;
+	width: 200px;
+	height: 400px;
+	color: white;
+	background-color: black;
+	
+	transform: scale(0.6);
+}
+
+.block3 {
+	position: absolute;
+	left: 77%;
+	top: 1720px;
+	width: 190px;
+	height: 250px;
+	color: white;
+	background-color: black;
+	
+	transform: scale(0.6);
+}
+
+.block4 {
+	position: absolute;
+	left: 71%;
+	top: 1790px;
+	width: 122px;
+	height: 650px;
+	color: white;
+	background-color: black;
+	
+	transform: scale(0.6);
+}
+
+.block5 {
+	position: absolute;
+	left: 59%;
+	top: 1790px;
+	width: 135px;
+	height: 650px;
+	color: white;
+	background-color: black;
+	
+	transform: scale(0.6);
+}
+
+.block6 {
+	position: absolute;
+	left: 66%;
+	top: 1790px;
+	width: 90px;
+	height: 600px;
+	color: white;
+	background-color: black;
+}
+
+.block7 {
+	position: absolute;
+	left: 56%;
+	top: 1600px;
+	width: 70px;
+	height: 560px;
+	color: white;
+	background-color: black;
