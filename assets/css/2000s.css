@@ -28,6 +28,11 @@ p {
 	background-color: black;
 }
 
+.title:active {
+	background-color: rgb(215, 187, 160);
+	color:black;
+}
+
 .intro {
 	font-size: 15px;
 	padding: 10px 100px;
@@ -49,14 +54,17 @@ p {
 	width: 600px;
 	height: 500px;
 	overflow: hidden;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(215, 187, 160);
 	
 	transform: scale(0.6);
 	transform-origin:bottom;
 
 	animation: smaller 1s forwards;
 
+}
+.mainone:active {
+	font-weight: bold;
 }
 
 .mainone:hover {
@@ -65,11 +73,11 @@ p {
 
 @keyframes bigger {
 	0% {transform: scale(0.6); font-size: 31px;}
-	100% {transform: scale(1); font-size: 12px;}
+	100% {transform: scale(1); font-size:17px;}
 
 }
 @keyframes smaller {
-	0% {transform: scale(1); font-size: 12px;}
+	0% {transform: scale(1); font-size: 1px;}
 	100% {transform: scale(0.6); font-size: 31px;}
 
 }
@@ -82,8 +90,8 @@ p {
 	width: 300px;
 	height: 500px;
 	overflow: hidden;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(215, 187, 160);
 	
 	transform: scale(0.6);
 	transform-origin: top right;	
@@ -115,8 +123,8 @@ p {
 	width: 340px;
 	height: 650px;
 	overflow: hidden;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(215, 187, 160);
 	
 	transform: scale(0.6);
 	transform-origin: top left;	
@@ -148,8 +156,8 @@ p {
 	width: 249px;
 	height: 750px;
 	overflow: hidden;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(215, 187, 160);
 	
 	transform: scale(0.6);
 	transform-origin: top right;	
@@ -182,8 +190,8 @@ p {
 	width: 290px;
 	height: 780px;
 	overflow: hidden;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(215, 187, 160);
 	
 	transform: scale(0.6);
 	transform-origin: top left;	
@@ -215,8 +223,8 @@ p {
 	top: 1480px;
 	width: 340px;
 	height: 6px;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(215, 187, 160);
 }
 
 
@@ -226,8 +234,8 @@ p {
 	top: 1530px;
 	width: 300px;
 	height: 400px;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(215, 187, 160);
 }
 
 .block2 {
@@ -236,8 +244,8 @@ p {
 	top: 1480px;
 	width: 200px;
 	height: 400px;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(215, 187, 160);
 	
 	transform: scale(0.6);
 }
@@ -248,8 +256,8 @@ p {
 	top: 1720px;
 	width: 190px;
 	height: 250px;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(215, 187, 160);
 	
 	transform: scale(0.6);
 }
@@ -260,8 +268,8 @@ p {
 	top: 1790px;
 	width: 122px;
 	height: 650px;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(215, 187, 160);
 	
 	transform: scale(0.6);
 }
@@ -272,8 +280,8 @@ p {
 	top: 1790px;
 	width: 135px;
 	height: 650px;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(215, 187, 160);
 	
 	transform: scale(0.6);
 }
@@ -284,8 +292,8 @@ p {
 	top: 1790px;
 	width: 90px;
 	height: 600px;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(215, 187, 160);
 }
 
 .block7 {
@@ -294,5 +302,5 @@ p {
 	top: 1600px;
 	width: 70px;
 	height: 560px;
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: rgb(215, 187, 160);
