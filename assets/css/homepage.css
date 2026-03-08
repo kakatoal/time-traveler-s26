@@ -14,18 +14,23 @@
 body {
 
 	font-family: "PaytoneOne", sans-serif;
-	background-color: rgb(255, 255, 255);
+	background-color:  rgb(36, 0, 240);
+	
 }
 header {
 	padding: 20px;
 	margin: 40px;
-	background-color: white;
-	border: 1px solid black;
+	background-color:rgba(0, 0, 0, 0.783);
+	align-items: center;
+	justify-content: center;
+	color:aliceblue;
+	
 }
 nav {
 	padding: 20px;
 	margin: 40px;
-	background-color: rgb(178, 178, 178);
+	background-color: rgb(255, 255, 255);
+	
 	
 }
 ul {
@@ -33,10 +38,10 @@ ul {
 }
 .box {
 	position:absolute;
-	background-color: rgb(36, 0, 240);
+	background-color: rgb(255, 255, 255);
 	margin: 20px;
 	animation-name: box-story ;
-	animation-duration: 4s;
+	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	top: 0px;
 	left: 0px;
@@ -72,10 +77,10 @@ ul {
 }
 .box2 {
 	position:absolute;
-	background-color: rgb(36, 0, 240);
+	background-color: rgb(255, 255, 255);
 	margin: 20px;
 	animation-name: box-story2;
-	animation-duration: 4s;
+	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	top: 0px;
 	left: 10px;
@@ -91,7 +96,7 @@ ul {
 	}
 	25% {
 		top: 0px;
-		left: 100%;
+		left:99%;
 		width: 10px;
 		height: 10px;
 	}
@@ -110,10 +115,10 @@ ul {
 }
 	.box3 {
 	position:absolute;
-	background-color: rgb(36, 0, 240);
+	background-color: rgb(255, 255, 255);
 	margin: 20px;
 	animation-name: box-story3;
-	animation-duration: 4s;
+	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	top: 10px;
 	left: 0px;
@@ -146,4 +151,64 @@ ul {
 		width: 10px;
 		height: 10px;
 	}
+}
+
+.textile{
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+	margin: 40px;
+}
+
+.textile1 {
+	background-color: rgb(36, 0, 240);
+	padding: 5px;
+	animation-name: changing-color;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	transition: background-color 0.5s ease;
+}
+.textile2 {
+	background-color: rgb(255, 255, 255);
+	padding: 5px;
+	animation-name: changing-color2;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	transition: background-color 0.5s ease;
+}
+
+@keyframes changing-color {
+	0% {
+		background-color: rgb(36, 0, 240);
+	}
+	50% {
+		background-color: rgb(255, 255, 255);
+	}
+}
+@keyframes changing-color2 {
+	0% {
+		background-color: rgb(255, 255, 255);
+	}
+	50% {
+		background-color: rgb(36, 0, 240);
+	}
+}
+
+.box11 {
+	position:absolute;
+	background-color:rgb(36, 0, 240);
+	margin: 20px;
+	top: 20px;
+	left: 20px;
+	width: 40px;
+	height: 10px;
+}
+
+.box12 {
+	position:absolute;
+	background-color:rgb(36, 0, 240);
+	margin: 20px;
+	top: 190px;
+	left: 20px;
+	width: 40px;
+	height: 10px;
 }
