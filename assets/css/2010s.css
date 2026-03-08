@@ -7,10 +7,128 @@
 
 /* Write your CSS below (feel free to change the styles already here) */
 @font-face {
-	font-family: "AUTHENTIC Sans";
-	src: url("../fonts/authentic-sans-pro-60.woff2");
+	font-family: "PaytoneOne";
+	src: url(../fonts/PaytoneOne-Regular.ttf);
 }
-body {
-	font-family: "AUTHENTIC Sans", sans-serif;
-	background-color: hsl(180deg, 100%, 50%);
+
+.title {
+	font-family: "PaytoneOne", sans-serif;
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	font-size: 30px;
+}
+.title1{
+	padding: 10px;
+	flex-grow: 1;
+	transition: flex-grow 0.4s ease;
+}
+.title2 {
+	padding: 10px;
+	flex-grow: 0;
+	transition: flex-grow 0.4s ease;
+}
+
+
+.title2:hover {
+	flex-grow: 10;
+}
+.title1:hover {
+	flex-grow: 0;
+}
+
+
+.whatshandmade {
+	font-family: "PaytoneOne", sans-serif;
+	border: 3px solid black;
+	padding: 10px;
+	margin: 40px;
+	background-color: rgb(0, 0, 0);
+	color: white;
+
+	overflow: hidden;
+}
+
+.h2 {
+	color:bisque;
+}
+
+.mainpart {
+	padding: 50px;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.4;
+	transition: opacity 0.4s ease;
+}
+
+.paragraph {
+	font-family: "PaytoneOne", sans-serif;
+	display: flex;
+	width: 100%;
+}
+
+.mainpart:hover {
+	opacity: 1;
+}
+.paragraph h2:hover {
+	background-color: rgb(26, 26, 26);
+	color: white;
+	flex-grow: 10;
+
+}
+
+.paragraph h2 {
+	background-color: rgb(0, 0, 0);
+	color: rgb(176, 176, 176);
+	transition: background-color 0.4s ease, color 0.4s ease;
+	flex-grow: 0;
+}
+
+.paragraph p{
+	flex: 1;
+	background-color: bisque;
+	color: rgb(77, 77, 77);
+	padding: 10px;
+	transition:flex 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+
+}
+
+.paragraph p:hover{
+	flex: 5;
+	background-color: whitesmoke;
+	color: black;
+}
+
+@media only screen and (max-width: 1500px) {
+	.mainpart {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+}
+@media only screen and (max-width: 1000px) {
+	.mainpart {
+		grid-template-columns: 1fr 1fr ;
+	}
+	
+}
+@media only screen and (max-width: 800px) {
+	.mainpart {
+		grid-template-columns: 1fr ;
+	}
+	
+}
+
+.navbar {
+	font-family: "PaytoneOne", sans-serif;
+	display: flex;
+	gap: 10px;
+	padding: 10px;
+	background-color: rgb(24, 24, 24);
+	
+}
+.spacer {
+	flex-grow: 1;
 }
